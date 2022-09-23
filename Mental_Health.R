@@ -138,8 +138,8 @@ plot(density(edu[['Mental.Health.Status']]), lwd=4,  xlab='Mental Health Status'
 inverse CDF")
 lines(density(sample2.3[['Mental.Health.Status_sim']]), col = 'red')
 
-# legend("topright", legend=c('orignal data', 'bootstrap', 'stratified ramdom sampling', 'stratified sampling with
-inverse CDF'), fill =c("black","purple", "orange", "red"))
+# legend("topright", 
+legend=c('orignal data', 'bootstrap', 'stratified ramdom sampling', 'stratified sampling withinverse CDF'), fill =c("black","purple", "orange", "red"))
 df <- data.frame(Variance=c(var(edu[['Mental.Health.Status']]),
                             var(sample2.1[['Mental.Health.Status']]),
                             var(sample2.2[['Mental.Health.Status']]),
